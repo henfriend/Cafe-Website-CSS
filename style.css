@@ -35,13 +35,93 @@ h1 {
 }
 
 button {
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
 }
 
-header {
+iframe {
     position: relative;
+    border: none;
+    min-width: 450px;
+}
+
+article {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+article > h2 {
+    left: 0;
+    text-align: center;
+    top: 30px;
+    width: 100%
+}
+
+article > div > span:nth-child(1) {
+    font-weight: bold;
+}
+
+article > div > address> a {
+    font-style: normal;
+}
+
+div.new {
+    font-size: large;
+    color: rgb(0, 190, 0);
+}
+
+table {
+    border-style: groove;
+    border-color: gray;
+}
+
+section > h2 {
+    font-weight: bold;
+}
+
+dd {
+    margin-top: 6px;
+    margin-bottom: 28px;
+}
+
+.gf::before {
+    content: 'gf ';
+}
+
+.vg::before {
+    content: 'vg ';
+}
+
+.vg.gf::before {
+    content: 'gf vg ';
+}
+
+section > h2 + section {
+    margin-bottom: 20px;
+}
+
+section > section + section {
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    max-width: fit-content;
+    border-color: gray;
+    border-style: groove;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: aliceblue;
+    color: black;
+}
+
+img[src="images/homepage banner.jpeg"] {
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
