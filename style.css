@@ -32,6 +32,8 @@ h1 {
     top: 0;
     background-color: aliceblue;
     color: black;
+    font-size: 72px;
+    text-align: center;
 }
 
 button {
@@ -119,9 +121,29 @@ tbody > tr:nth-child(odd) {
     color: black;
 }
 
+tbody > tr > td:nth-child(1) {
+    font-weight: bold;
+}
+
+tfoot {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
 img[src="images/homepage banner.jpeg"] {
     height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+img[src*="images/food"] {
+    height: 300px;
+    width: 400px;
+}
+
+p {
+    text-indent: 36px;
+}
+
+
